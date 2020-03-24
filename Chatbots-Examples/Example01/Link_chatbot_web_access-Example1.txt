@@ -1,0 +1,4 @@
+
+LINK TO THE CHATBOT WEB ACCESS:
+  - DMNChatbotExample1 - RiskCategory:
+  - https://bot.dialogflow.com/DMNChatbotExample1
