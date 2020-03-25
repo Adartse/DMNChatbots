@@ -1,4 +1,4 @@
-# Transforming DMN Decision Tables intoChatbots
+# Transforming DMN Decision Tables into Chatbots
 
 This repository shares prototype examples of chatbots generated following the methodology proposed in the article _"Transforming DMN Decision Tables into Chatbots"_, presented for its evaluation at the BPM 2020 International Conference.
 
