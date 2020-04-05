@@ -1,0 +1,88 @@
+
+%[dmnexample1]('training': '100', 'testing': '100')
+    ~[init] ~[decision] ~[of parameters?] ~[with parameters?]
+    ~[decision] ~[of parameters?] ~[with parameters?]
+    ~[init?] ~[decision] ~[and parameters]
+
+%[riskscore_intent]
+    ~[risk score answer]
+    ~[risk score answer] ~[of-input parameters?] ~[with parameters?]
+    ~[risk score answer] ~[and parameters]
+
+%[existingcustomer_intent]
+    ~[existing customer answer] ~[with parameters?]
+    ~[existing customer answer] ~[and parameters?]
+
+~[init]
+    which is the
+    what is the
+    I want to determine the
+    I want to know the
+    I want to execute the decision
+    Decision
+
+~[decision]
+    risk category
+    post bureau risk category
+
+// Combinations of parameters (does not take into account removing duplicates in inputs)
+~[of parameters]
+    of @[ec]
+    for @[ec]
+~[of-input parameters]
+    it is @[ec]
+~[with parameters]
+    ~[with?] ~[param ars]
+    ~[with?] ~[param cs]
+    ~[with?] ~[param ars] ~[and?] ~[param cs]
+    ~[with?] ~[param cs] ~[and?] ~[param ars]
+~[and parameters]
+    ~[and?] ~[param-and ars]
+    ~[and?] ~[param-and ec]
+    ~[param-and ars] and ~[param-and ec]
+
+
+// Input risk score (with-param, integer)
+~[risk score answer]
+    @[ars]
+    the ~[application risk score] is @[ars]
+    it is @[ars]
+~[param-and ars]
+    the ~[application risk score] is @[ars]    
+~[param-with ars]
+    ~[a?] ~[application risk score] of @[ars]
+    a value of ~[application risk score] of @[ars]
+    ~[a value of?] ~[application risk score] equals to @[ars]
+    ~[application risk score] as @[ars]
+~[application risk score]
+    application risk score
+    risk score
+@[ars]
+    23
+    45
+
+// Input credit score (with-param, integer)
+~[credit score answer]
+    @[cs]
+    the ~[credit score] is @[cs]
+    it is @[cs]
+~[param-and cs]
+    the ~[credit score] is @[cs]    
+~[param-with cs]
+    ~[a?] ~[credit score] of @[cs]
+    a value of ~[credit score] of @[cs]
+    ~[a value of?] ~[credit score] equals to @[cs]
+    ~[credit score] as @[cs]
+~[credit score]
+    credit score
+@[cs]
+    74
+    23
+
+// Input existing customer (of-param, boolean)
+~[param-of ec2]
+    it is @[ec2]
+@[ec]
+    an existing customer
+    a non existing customer
+    not an existing customer 
